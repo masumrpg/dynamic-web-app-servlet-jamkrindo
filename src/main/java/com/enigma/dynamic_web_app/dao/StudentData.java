@@ -20,15 +20,6 @@ public class StudentData {
         return students;
     }
 
-    public static Student getStudentById(String id) {
-        for (Student student : getStudents()) {
-            if (student.getId().equals(id)) {
-                return student;
-            }
-        }
-        return null;
-    }
-
     public static String getStudentsJson() {
         List<Student> students = getStudents();
         StringBuilder jsonBuilder = new StringBuilder();

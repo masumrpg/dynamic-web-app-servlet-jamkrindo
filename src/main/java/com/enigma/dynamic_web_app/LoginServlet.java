@@ -13,21 +13,6 @@ import java.util.List;
 
 @WebServlet("/")
 public class LoginServlet extends HttpServlet {
-//    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//        String userId = request.getParameter("userId");
-//        String password = request.getParameter("password");
-//
-//        if (userId.equals("admin") && password.equals("password")) {
-//            HttpSession session = request.getSession();
-//            session.setAttribute("userId", userId);
-//
-//            response.sendRedirect("welcome.jsp");
-//        } else {
-//            request.setAttribute("errorMessage", "Invalid user ID or password");
-//            request.getRequestDispatcher("index.jsp").forward(request, response);
-//        }
-//    }
-
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String userId = request.getParameter("userId");
         String password = request.getParameter("password");
